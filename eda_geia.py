@@ -41,11 +41,11 @@ if __name__ == '__main__':
     train_dataset, val_dataset, test_dataset, external_dataset = prepare_dataset(
         config, sent_list, doc_embs)
     
-    with open(f"/data1/emb_attack/train_dataset_{config['option']}_{config['multiple']}_{config['count']}.pickle", 'rb') as f:
+    with open(f"eda_data/train_dataset_{config['option']}_{config['multiple']}_{config['count']}.pickle", 'rb') as f:
         train_dataset = pickle.load(f)
-    with open(f"/data1/emb_attack/val_dataset_{config['multiple']}_{config['count']}.pickle", 'rb') as f:
+    with open(f"eda_data/val_dataset_{config['multiple']}_{config['count']}.pickle", 'rb') as f:
         val_dataset = pickle.load(f)
-    with open(f"/data1/emb_attack/test_dataset_{config['multiple']}_{config['count']}.pickle", 'rb') as f:
+    with open(f"eda_data/test_dataset_{config['multiple']}_{config['count']}.pickle", 'rb') as f:
         test_dataset = pickle.load(f)
 
     print(f"Number of training data: {len(train_dataset)}.")
