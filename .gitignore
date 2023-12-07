@@ -1,0 +1,23 @@
+# Cache data
+__pycache__
+.ipynb_checkpoints/
+test*
+*.pkz
+*.txt
+*.json
+projection*
+*.bin
+*.log
+model.safetensors
+
+# Save data
+logs/
+data/
+wandb/
+*output/
+baseline/
+save_models/
+precompute_target/
+
+# Setting data
+.vscode
