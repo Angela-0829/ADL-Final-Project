@@ -18,6 +18,7 @@ wandb/
 baseline/
 save_models/
 precompute_target/
+eda_data/
 
 # Setting data
 .vscode

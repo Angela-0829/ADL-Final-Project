@@ -104,17 +104,17 @@ if __name__ == '__main__':
     print(f"Number of new training data (delete): {len(train_dataset_delete)}.")
     print(f"Number of new training data (replace): {len(train_dataset_replace)}.")
     print(f"Number of new training data (swap): {len(train_dataset_swap)}.")
-    with open(f"train_dataset_insert_{aug_num}_{config['count']}.pickle", 'wb') as f:
+    with open(f"eda_data/train_dataset_insert_{aug_num}_{config['count']}.pickle", 'wb') as f:
         pickle.dump(train_dataset_insert, f)
-    with open(f"train_dataset_delete_{aug_num}_{config['count']}.pickle", 'wb') as f:
+    with open(f"eda_data/train_dataset_delete_{aug_num}_{config['count']}.pickle", 'wb') as f:
         pickle.dump(train_dataset_delete, f)
-    with open(f"train_dataset_replace_{aug_num}_{config['count']}.pickle", 'wb') as f:
+    with open(f"eda_data/train_dataset_replace_{aug_num}_{config['count']}.pickle", 'wb') as f:
         pickle.dump(train_dataset_replace, f)
-    with open(f"train_dataset_swap_{aug_num}_{config['count']}.pickle", 'wb') as f:
+    with open(f"eda_data/train_dataset_swap_{aug_num}_{config['count']}.pickle", 'wb') as f:
         pickle.dump(train_dataset_swap, f)
-    with open(f"val_dataset_{aug_num}_{config['count']}.pickle", 'wb') as f:
+    with open(f"eda_data/val_dataset_{aug_num}_{config['count']}.pickle", 'wb') as f:
         pickle.dump(val_dataset, f)
-    with open(f"test_dataset_{aug_num}_{config['count']}.pickle", 'wb') as f:
+    with open(f"eda_data/test_dataset_{aug_num}_{config['count']}.pickle", 'wb') as f:
         pickle.dump(test_dataset, f)
 
     print(f"Number of training data: {len(train_dataset)}.")
