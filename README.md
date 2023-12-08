@@ -3,7 +3,7 @@ Generative Embedding Inversion Attack (GEIA)
 
 ## run baseline GEIA
 ```
-python baseline_geia.py --dataset=qnli --train_ratio=0.05
+python baseline_geia.py --exp_name=baseline_geia --dataset=qnli --train_ratio=0.05
 ```
 
 ## produce easy data augmentation data
